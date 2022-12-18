@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Roboto:wght@900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body style="text-align: center; font-family: 'Roboto', sans-serif; font-weight: bolder; font-size: 300%">
+
+    <!-- <div>
+        Стартовый Капитал
+        <br>
+        <input type="text" id="start">
+    </div> -->
+
+    <br>
+
+    <div style="display:inline-block">
+    <!-- Баланс 1
+    <input type="text" id="balance1">
+    <br>
+    Баланс 2
+    <input type="text" id="balance2">
+    <br>
+    Баланс 3
+    <input type="text" id="balance3">
+    <br> -->
+
+    Баланс 1
+    <input type="text" id="balance1" value="25">
+    <br>
+    Баланс 2
+    <input type="text" id="balance2" value="25">
+    <br>
+    Баланс 3
+    <input type="text" id="balance3" value="25">
+    <br>
+    </div>
+
+    <br> <br>
+
+    <div style="display:inline-block">
+        Игрок 1
+        <input type="text" id="player1">
+        <input type="button" value="ВВОД ДАННЫХ" onclick="plusPlayer1()">
+        <br>
+         Игрок 2
+        <input type="text" id="player2">
+        <input type="button" value="ВВОД ДАННЫХ" onclick="plusPlayer2()">
+        <br>
+        Игрок 3
+        <input type="text" id="player3">
+        <input type="button" value="ВВОД ДАННЫХ" onclick="plusPlayer3()">
+        <br>
+    </div>
+
+    
+    <!-- Игрок 1
+    <p><input type="text" id="player1"></p>
+    <p><input type="button" value="ВВОД ДАННЫХ" onclick="plus()"></p>
+    Игрок 2
+    <p><input type="text" id="player2"></p>
+    <p><input type="button" value="ВВОД ДАННЫХ" onclick="plus()"></p>
+    Игрок 3
+    <p><input type="text" id="player3"></p>
+    <p><input type="button" value="ВВОД ДАННЫХ" onclick="plus()"></p> -->
+
+
+
+    <script>
+        let balance1 = document.getElementById("balance1");
+        let balance2 = document.getElementById("balance2");
+        let balance3 = document.getElementById("balance3");
+
+        // let balance1_n = input.value0;
+        
+        function plusPlayer1() {
+        // allSumm1 = parseInt(start.value) + parseInt(player1.value);
+        allSumm1 = parseInt(balance1.value) + parseInt(player1.value);
+        document.getElementById("balance1").value = allSumm1;
+        document.getElementById('player1').value = '';
+        }
+
+        function plusPlayer2() {
+        // allSumm2 = parseInt(start.value) + parseInt(player2.value);
+        allSumm2 = parseInt(balance2.value) + parseInt(player2.value);
+        document.getElementById("balance2").value = allSumm2;
+        document.getElementById('player2').value = '';
+        }
+
+        function plusPlayer3() {
+        // allSumm3 = parseInt(start.value) + parseInt(player3.value);
+        allSumm3 = parseInt(balance3.value) + parseInt(player3.value);
+        document.getElementById("balance3").value = allSumm3;
+        document.getElementById('player3').value = '';
+        }
+
+    </script>
+
+</body>
+</html>
